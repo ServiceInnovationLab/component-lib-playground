@@ -4,9 +4,15 @@ import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
 import { linkTo } from '@storybook/addon-links';
 
-import { Button } from 'component-library';
+import { Button, Accordian } from 'component-library';
 
 // storiesOf('Welcome', module).add('to Storybook', () => <Welcome showApp={linkTo('Button')} />);
+
+storiesOf('Accordian', module)
+  .add('with text', () => <Accordian
+    header="This is the header"
+    body="This is the body text"
+  />);
 
 storiesOf('Button', module)
   .add('with text', () => <Button
@@ -28,3 +34,5 @@ storiesOf('Button', module)
       </span>
     </Button>
   ));
+
+// write test to require text
