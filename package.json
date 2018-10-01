@@ -9,7 +9,9 @@
     "lint": "eslint src/**",
     "lint:watch": "esw -w src/**",
     "start": "npm run build && NODE_ENV=production node server.js",
-    "test": "mocha --compilers js:babel-core/register ./test/**/*.spec.js --require ignore-styles"
+    "test": "mocha --compilers js:babel-core/register ./test/**/*.spec.js --require ignore-styles",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "author": "",
   "license": "ISC",
@@ -43,6 +45,11 @@
     "react-test-renderer": "^15.5.4",
     "webpack-dev-middleware": "^1.10.1",
     "webpack-dev-server": "^2.4.2",
-    "webpack-hot-middleware": "^2.18.0"
+    "webpack-hot-middleware": "^2.18.0",
+    "@storybook/react": "^3.4.11",
+    "@storybook/addon-actions": "^3.4.11",
+    "@storybook/addon-links": "^3.4.11",
+    "@storybook/addons": "^3.4.11",
+    "babel-runtime": "^6.26.0"
   }
 }
