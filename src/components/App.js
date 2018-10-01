@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Button, Label } from 'component-library';
+import { Button } from 'component-library';
 
 import '../assets/stylesheets/base.scss';
 
@@ -8,54 +8,21 @@ import '../assets/stylesheets/base.scss';
 const App = ({ name }) => {
   return (
     <div>
-      <Label size="small">Hello, {name}!</Label>
-      <div>
-        <Button
-          bgColor="green"
-          size="small"
-        >
-          small
-        </Button>
-      </div>
-      <div>
-        <Button
-          bgColor="yellow"
-          size="medium"
-        >
-          medium
-        </Button>
-      </div>
-      <div>
-        <Button
-          bgColor="orange"
-          size="large"
-        >
-          large
-        </Button>
-      </div>
-      <div>
-        <Button
-          size="wide"
-        >
-          wide
-        </Button>
-      </div>
-      <div>
-        <Button
-          bgColor="pink"
-          size="extraWide"
-        >
-          extra wide
-        </Button>
-      </div>
-      <div>
-        <Button
-          bgColor="purple"
-          size="fullWidth"
-        >
-          full width
-        </Button>
-      </div>
+      <Button
+        bgColor="orange"
+        hoverColor="darkOrange"
+        size="small"
+      >Click me</Button>
+      <Button
+        bgColor="pink"
+        hoverColor="darkPink"
+        size="medium"
+      >Click me</Button>
+      <Button
+        bgColor="blue"
+        hoverColor="darkBlue"
+        size="large"
+      >Click me</Button>
     </div>
   );
 };
