@@ -17,7 +17,12 @@ storiesOf('Button', module)
     Hello Button
   </Button>)
   .add('with some emoji', () => (
-    <Button onClick={action('clicked')}>
+    <Button
+      onClick={action('clicked')}
+      bgColor="blue"
+      hoverColor="darkBlue"
+      size="medium"
+    >
       <span role="img" aria-label="so cool">
         😀 😎 👍 💯
       </span>
