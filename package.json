@@ -48,7 +48,7 @@
     "ignore-styles": "^5.0.1",
     "react-addons-test-utils": "^15.5.1",
     "react-test-renderer": "^15.5.4",
-    "webpack-dev-middleware": "^1.10.1",
+    "webpack-dev-middleware": "^2.0.6",
     "webpack-dev-server": "^3.1.11",
     "webpack-hot-middleware": "^2.18.0"
   }
